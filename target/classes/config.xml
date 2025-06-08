@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context 
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+      <!--This is our first beans --> 
+      <bean class="com.springcore.Student" name="student1" p:studentId="123456" p:StudentName="Pankaj Naik" p:studentAddres="At/Post : Malkheda, Tal: Jamner, Dist: Jalgaon 424204 Maharastra...!" />
+      
+      <!--This is our Second beans --> 
+      <bean class="com.springcore.Student" name="student2" p:studentId="98765443" p:StudentName="Akash Naik" p:studentAddres="At/Post : Malkheda, Tal: Jamner, Dist: Jalgaon 424204 Maharastra...!" />
+      
+</beans>
+
+
+
+<!--
+	// Fisrt Way to inject value
+	
+	<bean class="com.springcore.Student" name="student1">
+      
+        <property name="studentId">
+          <value>22344</value>
+        </property>
+        
+        <property name="StudentName">
+           <value>Pankaj Naik</value>
+        </property>
+        
+        <property name="studentAddres">
+           <value>Pune</value>
+        </property>
+        
+      </bean>
+	
+-->
+
+<!--
+	//Second Way to inject value - value as a atribute
+	
+	   <bean class="com.springcore.Student" name="student1">
+      
+    //value as a Atribute
+        <property name="studentId" value="123456" />
+        
+        <property name="StudentName" value="Pankaj Naik" />
+           
+        <property name="studentAddres" value="At/Post : Malkheda, Tal: Jamner, Dist: Jalgaon 424204 Maharastra...!" />
+           
+      </bean>
+      
+-->
+
+<!--
+	
+      //Third Way to inject value using this schema p =  xmlns:p="http://www.springframework.org/schema/p"
+      <bean class="com.springcore.Student" name="student1" p:studentId="123456" p:StudentName="Pankaj Naik" p:studentAddres="At/Post : Malkheda, Tal: Jamner, Dist: Jalgaon 424204 Maharastra...!" />
+      
+-->
