@@ -9,7 +9,7 @@ public class Test {
 		
 	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/ref/refconfig.xml");
 
-	A a1 = (A) context.getBean("aref1");
+	A a1 = (A) context.getBean("aref1"); //Type cast
 	
 	System.out.println(a1.getX());
 	
@@ -20,3 +20,4 @@ public class Test {
 	}
 
 }
+

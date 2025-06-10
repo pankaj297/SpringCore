@@ -8,13 +8,17 @@ public class Test {
 		
    ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/collections/empconfig.xml");
 	  
-	  Emp emp1 =  (Emp) context.getBean("emp1");
+	  Emp emp1 =  (Emp) context.getBean("emp1"); //Type cast
 	  
-	  System.out.println(emp1.getName());
-	  System.out.println(emp1.getPhones());
-	  System.out.println(emp1.getAddresses());
-	  System.out.println(emp1.getCourses());
-	  System.out.println(emp1.getProp());
+	  //Wtihout toString 
+//	  System.out.println(emp1.getName());
+//	  System.out.println(emp1.getPhones());
+//	  System.out.println(emp1.getAddresses());
+//	  System.out.println(emp1.getCourses());
+//	  System.out.println(emp1.getProp());
+	  
+	  //With toString 
+	  System.out.println(emp1);
 	  
 
 	}

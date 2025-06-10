@@ -63,6 +63,13 @@ public class Emp {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@Override
+	public String toString() {
+		return "Emp [\n name=" + name + ", \n phones=" + phones + ", \n addresses=" + addresses + ", \n courses=" + courses
+				+ ",\n prop=" + prop + " \n ]";
+	}
+	
+	
 	
      
     
