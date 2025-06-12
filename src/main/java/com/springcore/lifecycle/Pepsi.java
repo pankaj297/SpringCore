@@ -26,15 +26,14 @@ public class Pepsi implements InitializingBean, DisposableBean {
 	public String toString() {
 		return "Pepsi Price = " + price + "₹";
 	}
+	
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		// init
 		
-		System.out.println("Taking Pepsi..!");
-		
+		System.out.println("Taking Pepsi..!");	
 	}
-
 	
 	@Override
 	public void destroy() throws Exception {

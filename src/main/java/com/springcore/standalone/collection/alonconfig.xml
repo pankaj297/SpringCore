@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/util 
+           https://www.springframework.org/schema/util/spring-util.xsd
+           ">
+
+      <!--StandAlon list -->
+      <util:list list-class="java.util.LinkedList" id="mybestfriends">
+          <value>pankaj</value>
+          <value>akash</value>
+          <value>chetan</value>
+          <value>rajesh</value>
+      </util:list>
+      
+       <!--StandAlon map -->
+       <util:map map-class="java.util.HashMap" id="mp">
+         <entry key="BCA" value="10000"/>
+         <entry key="MCA" value="20000"/>
+         <entry key="BBA" value="15000"/>
+       </util:map>
+       
+       <!-- Standalone propersties-->
+       <util:properties id="prop">
+           <prop key="101">pankaj naik</prop>
+           <prop key="102">akash naik</prop>
+           <prop key="103">chetan naik</prop>
+       </util:properties>
+
+     <bean class="com.springcore.standalone.collection.Person" name="person1" >
+        <property name="friends" ref="mybestfriends"/>
+        <property name="fees" ref="mp" />
+        <property name="properties" ref="prop" />
+   
+     </bean>
+     
+     
+</beans>
+
+
