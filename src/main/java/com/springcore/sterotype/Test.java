@@ -1,13 +1,15 @@
 package com.springcore.sterotype;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
 		
-	 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/sterotype/stereoconfig.xml");
+	 ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/sterotype/stereoconfig.xml");
 
 	 Student student = context.getBean("student", Student.class);
 	 

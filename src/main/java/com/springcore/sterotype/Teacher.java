@@ -1,5 +1,7 @@
 package com.springcore.sterotype;
 
+
 public class Teacher {
-   private String name;
+   @SuppressWarnings("unused")
+private String name;
 }

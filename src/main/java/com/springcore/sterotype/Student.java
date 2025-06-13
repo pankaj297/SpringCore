@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 
+//Automatic object create using @component
 @Component
 @Scope("prototype")
 public class Student {

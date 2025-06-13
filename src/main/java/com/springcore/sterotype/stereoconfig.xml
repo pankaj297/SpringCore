@@ -26,7 +26,7 @@
             <value>847562930278</value>
     </util:list>
     
-    <bean class="com.springcore.sterotype.Teacher" name="teacher" scope="prototype"></bean>
+    <bean class="com.springcore.sterotype.Teacher" name="teacher" scope="prototype" />
    
 </beans>
 

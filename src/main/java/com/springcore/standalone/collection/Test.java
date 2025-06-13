@@ -3,6 +3,7 @@ package com.springcore.standalone.collection;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
+	@SuppressWarnings("resource")
    public static void main(String[] args) {
 	   
 	
